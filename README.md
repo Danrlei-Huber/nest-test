@@ -14,6 +14,7 @@ $ npm install
 ```bash
 # development
 $ npm run build
+$ sls offline 
 
 # watch mode -- OFF
 $ npm run start:dev
