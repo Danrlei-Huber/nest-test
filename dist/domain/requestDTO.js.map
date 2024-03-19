@@ -1,1 +1,0 @@
-{"version":3,"file":"requestDTO.js","sourceRoot":"","sources":["../../src/domain/requestDTO.ts"],"names":[],"mappings":";;;AAAA,MAAa,WAAW;IAQpB,YAAY,MAAe,EAAE,GAAW,EAAE,IAAS;QAC/C,IAAI,CAAC,MAAM,GAAG,MAAM,CAAC;QACrB,IAAI,CAAC,GAAG,GAAG,GAAG,CAAC;QACf,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;IACrB,CAAC;CAEJ;AAdD,kCAcC"}

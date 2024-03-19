@@ -1,7 +1,7 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 import { v4 as uuidv4 } from 'uuid';
 import { UserDTO } from "./userDTO";
-import { rolesEnum } from "src/enums/roles";
+import { rolesEnum } from "../../../enum/roles";
 
 @Entity()
 export class User {
@@ -32,6 +32,7 @@ export class User {
 
     @Column()
     role: String;
+
 
     constructor(userDTO: UserDTO) {
         this.userId = uuidv4();
