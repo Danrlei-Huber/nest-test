@@ -3,23 +3,12 @@ import { AppDataSource } from "src/config/data-source";
 import { User } from "src/domain/entitys/user/user";
 import { UserDTO } from "src/domain/entitys/user/userDTO";
 import { ResponseDTO } from "src/domain/requestDTO";
-import { Any } from "typeorm";
-import { Repository } from "typeorm/repository/Repository";
-import { v4 as uuidv4 } from 'uuid';
+import { Any, Repository } from "typeorm";
 
 @Injectable()
-export class apiInfoService {
+export class UserService {
 
     userRepository: Repository<User> = AppDataSource.getRepository(User);
-
-    ola(): ResponseDTO {
-        const response: ResponseDTO = new ResponseDTO(true,
-            'api online',
-            Any
-        );
-
-        return response;
-    }
 
     createNewUser(userDTO: UserDTO): ResponseDTO {
         try {

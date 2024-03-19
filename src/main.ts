@@ -2,6 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import serverlessExpress from '@codegenie/serverless-express';
 import { Callback, Context, Handler } from 'aws-lambda';
 import { AppModule } from './app.module';
+import "reflect-metadata"
 
 let server: Handler;
 
